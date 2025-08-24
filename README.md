@@ -11,4 +11,8 @@
 
 3. 검색창에 다음 입력 후 실행하세요 -> Shell Command: Install 'code' command in PATH
 
-4. CA와 함께 실행  -> NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem" code .
+4. pkill -f "Visual Studio Code" || true
+NODE_EXTRA_CA_CERTS="/Users/mac/Library/Application Support/mkcert/rootCA.pem" \
+open -na "Visual Studio Code" --args --new-window "/Users/mac/Desktop/crisp/crisp"
+
+
